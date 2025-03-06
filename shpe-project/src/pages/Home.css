@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    margin: 0;
+}
+
+.box {
+    width: 50%;
+    height: 100%;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left div {
+    width: 70%;
+}
+.left h1 {
+    font-size: 50px;
+    background-image: linear-gradient(#F2272E, #D6696D);
+    color: transparent;
+    background-clip: text;
+}
+
+.left p {
+    font-size: 24px;
+    color: #888888;
+}
+
+button {
+    background-color: #F2272E; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.right {
+    background-image: url("../assets/kids-learning.png");
+    background-size: cover;
+}

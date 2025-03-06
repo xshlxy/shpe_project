@@ -1,10 +1,22 @@
 ul {
     list-style: none;
-    border: 1px solid red;
     display: flex;
     justify-content: right;
+    border-bottom: 1px solid lightgray;
 }
 li {
     display: inline;
     padding: 10px;
+    position: relative; 
+    bottom: 8px;
+}
+li:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+img {
+    width: 100px;
+    height: 32px;
+    position: absolute;
+    left: 20px;
 }
