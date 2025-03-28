@@ -15,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/language" element={<Language />} />
         <Route path="/culture" element={<Culture />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
     </>
