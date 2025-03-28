@@ -1,4 +1,3 @@
-
 import kidsLearning from "../assets/kids-learning.png";
 import "./Home.css";
 

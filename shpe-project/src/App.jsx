@@ -1,18 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Link } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import Home from './pages/Home';
-import React from 'react'
-import './App.css'
+import Language from './pages/Language';
+import Culture from './pages/Culture';
+import './App.css';
 
 
 function App() {
   return (
     <>
+    <Router>
       <Header />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/language" element={<Language />} />
+        <Route path="/culture" element={<Culture />} />
+      </Routes>
+    </Router>
     </>
   );
 }
