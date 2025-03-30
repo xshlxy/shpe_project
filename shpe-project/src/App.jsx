@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Language from './pages/Language';
 import Culture from './pages/Culture';
+import Profile from './pages/Profile';
 import './App.css';
 
 

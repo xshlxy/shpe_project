@@ -15,8 +15,8 @@ const Language = () => {
             <div>
                 {flashcards.map((flashcard) => (
                     <div key={flashcard.id}>
-                        <h2>{flashcard.question}</h2>
-                        <p>{flashcard.answer}</p>
+                        <h2>{flashcard.english_word}</h2>
+                        <p>{flashcard.spanish_word}</p>
                     </div>
                 ))}
             </div>

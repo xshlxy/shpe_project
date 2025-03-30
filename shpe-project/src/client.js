@@ -7,11 +7,13 @@ const API_KEY = import.meta.env.VITE_SUPABASE_API_KEY;
 export const supabase = createClient(URL, API_KEY);
 
 export const fetchFlashcards = async () => {
-    const { data, error } = await supabase.from('flashcards').select('*');
-    console.log('Flashcards:', data);
-    if (error) {
-      console.error('Error fetching flashcards:', error);
+    try {
+      const { data, error } = await supabase.from('flashcards').select('*');
+      if (error) throw error;
+      console.log('Flashcards:', data);
+      return data;
+    } catch (err) {
+      console.error('Error fetching flashcards:', err.message);
       return [];
     }
-    return data;
-  };
+};
